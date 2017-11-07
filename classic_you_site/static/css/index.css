@@ -2,6 +2,9 @@
 /* Colors */
 /* 96, 202, 173 */
 /* Consultant Colors */
+.original {
+  color:#60caad;
+}
 .home-hero {
   text-align: center;
   padding-top: 40px;
@@ -12,10 +15,10 @@
 }
 
 .home-hero > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
-  font-size: 58px;
+  font-size: 90px;
   line-height: 64px;
   margin-bottom: 10px;
 }
@@ -38,7 +41,7 @@
   /* Special override to keep Roman letterforms */
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
-  font-size: 72px;
+  font-size: 58px;
   line-height: 78px;
 }
 
@@ -88,7 +91,7 @@
     padding: 0;
   }
   .home-hero > .heading > .title {
-    color: #60caad;
+    color: #7360ca;
     font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
     font-weight: 100;
     font-size: 58px;
@@ -442,7 +445,7 @@
 }
 
 .the-author .second > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -552,7 +555,7 @@
 }
 
 .the-method > .content > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -651,7 +654,7 @@
 }
 
 .current-news > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -779,18 +782,18 @@
   font-size: 12px;
   line-height: 10px;
   font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
-  color: #60caad;
+  color: #7360ca;
   display: inline-block;
   vertical-align: top;
   text-align: left;
   padding: 8px 0;
-  border: 2px solid #60caad;
+  border: 2px solid #7360ca;
   padding: 14px 15px 12px;
 }
 
 .current-news > .tile-group > .tile > .content > .lockup .button-group a:hover {
   opacity: 1;
-  background: #60caad;
+  background: #7360ca;
   color: #fff;
 }
 
@@ -832,7 +835,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 4%;
 }
 
@@ -868,7 +871,7 @@
 }
 
 .the-books .first > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -940,11 +943,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
@@ -993,7 +996,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 4%;
 }
 
@@ -1041,7 +1044,7 @@
 }
 
 .the-app .second > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -1135,11 +1138,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
@@ -1189,7 +1192,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 0 4% 4%;
 }
 
@@ -1219,7 +1222,7 @@
 }
 
 .the-seminars .second > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -1291,11 +1294,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
@@ -1344,7 +1347,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 0 4% 4%;
 }
 
@@ -1374,7 +1377,7 @@
 }
 
 .the-consultants .second > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -1446,11 +1449,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
@@ -1499,7 +1502,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 4%;
 }
 
@@ -1535,7 +1538,7 @@
 }
 
 .the-association .first > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -1607,11 +1610,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
@@ -1660,7 +1663,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 4%;
 }
 
@@ -1696,7 +1699,7 @@
 }
 
 .the-books-jp .first > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -1768,11 +1771,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
@@ -1821,7 +1824,7 @@
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
-  background: #60caad;
+  background: #7360ca;
   margin: 4%;
 }
 
@@ -1857,7 +1860,7 @@
 }
 
 .the-blog .first > .lockup > .heading > .title {
-  color: #60caad;
+  color: #7360ca;
   font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
   font-weight: 100;
   font-size: 58px;
@@ -1929,11 +1932,11 @@
   border-radius: 33px;
   display: inline-block;
   vertical-align: top;
-  color: #60caad;
+  color: #7360ca;
   font-size: 22px;
   line-height: 28px;
   position: relative;
-  border: 1px solid #60caad;
+  border: 1px solid #7360ca;
   padding: 11px 25px 10px;
   border: 1px solid rgba(0, 0, 0, 0.6);
   color: rgba(0, 0, 0, 0.6);
