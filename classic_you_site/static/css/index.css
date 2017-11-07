@@ -1,0 +1,1980 @@
+@charset "UTF-8";
+/* Colors */
+/* 96, 202, 173 */
+/* Consultant Colors */
+.home-hero {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.home-hero > .heading {
+  margin: 10px auto 20px;
+}
+
+.home-hero > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .home-hero > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .home-hero > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.jp .home-hero > .heading > .title {
+  /* Special override to keep Roman letterforms */
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 72px;
+  line-height: 78px;
+}
+
+.home-hero > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 590px;
+  margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 560px) {
+  .home-hero > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .home-hero > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .home-hero > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.home-hero > .graphic {
+  width: 682px;
+  overflow: hidden;
+  height: 755px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+  .home-hero {
+    padding: 0 4% 0;
+  }
+  .home-hero > .heading {
+    padding: 0;
+  }
+  .home-hero > .heading > .title {
+    color: #60caad;
+    font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+    font-weight: 100;
+    font-size: 58px;
+    line-height: 64px;
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 720px) and (max-width: 560px) {
+  .home-hero > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-width: 720px) and (max-height: 700px) {
+  .home-hero > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home-hero > .heading > .description {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .home-hero > .graphic {
+    width: auto;
+    height: auto;
+  }
+}
+
+.engagement {
+  width: auto;
+  max-width: 1120px;
+  margin: 60px auto 70px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+}
+
+.engagement .social-media-properties {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  align-items: top;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.engagement .social-media-properties > .heading > .title {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .engagement .social-media-properties > .heading > .title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .engagement .social-media-properties > .heading > .title {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .engagement .social-media-properties > .heading > .title {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.engagement .social-media-properties > .third-party-presence {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  padding-right: 40px;
+  width: 100%;
+  margin-top: -13px;
+}
+
+.engagement .social-media-properties > .third-party-presence > a {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 2%;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: #7b7976;
+  border: 2px solid #e2e0dc;
+  width: 60px;
+  height: 60px;
+}
+
+.engagement .social-media-properties > .third-party-presence > a:hover {
+  opacity: 1;
+  color: #60caad;
+  border-color: #a2a19e;
+}
+
+.engagement .social-media-properties > .third-party-presence > a > .graphic {
+  display: block;
+  width: 30px;
+}
+
+.engagement .mailing-list.hero.stacked.lite {
+  margin: 0;
+  width: 70%;
+  background: transparent;
+  overflow: visible;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  align-items: top;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading {
+  margin: 0;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup .form {
+  width: 100%;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup .form .note {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .email {
+  float: left;
+  margin: 0 2% 0 0;
+  width: 80%;
+}
+
+.engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .button {
+  float: left;
+  width: 18%;
+  min-width: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .engagement .mailing-list.hero.stacked.lite {
+    padding-bottom: 20px;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .email {
+    float: left !important;
+    margin: 0 2% 0 0 !important;
+    width: 80% !important;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .button {
+    float: left !important;
+    width: 18% !important;
+    min-width: auto !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .engagement {
+    margin: 0 4%;
+    display: block;
+  }
+  .engagement .social-media-properties {
+    display: block;
+    margin: 0 auto 20px;
+    width: auto;
+    max-width: 320px;
+  }
+  .engagement .social-media-properties > .heading {
+    margin-bottom: 10px;
+  }
+  .engagement .social-media-properties > .third-party-presence {
+    margin: 0 0 20px;
+    padding-right: 0;
+  }
+  .engagement .mailing-list.hero.stacked.lite {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .engagement .mailing-list.hero.stacked.lite {
+    margin: 0 auto;
+    width: auto;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup {
+    display: block;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading {
+    margin: 0 0 10px;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+    font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+    font-weight: 200;
+    color: #7b7976;
+    font-size: 24px;
+    line-height: 34px;
+    font-size: 18px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 640px) and (max-width: 560px) {
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 640px) and (max-height: 700px) {
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .jp .engagement .mailing-list.hero.stacked.lite .first > .lockup > .heading > .title {
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form {
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form .note {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .email {
+    float: left;
+    margin: 0 2% 0 0;
+    width: 80%;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .button {
+    float: left;
+    width: 18%;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .engagement .social-media-properties {
+    margin: 0 auto;
+    width: auto;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .email {
+    float: none;
+    margin: 0 0 10px 0 !important;
+    width: 100% !important;
+  }
+  .engagement .mailing-list.hero.stacked.lite .first > .lockup .form form .button {
+    float: none;
+    width: 100% !important;
+    min-width: auto;
+  }
+}
+
+.the-author {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #f6f4f0;
+  margin: 0 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-author {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-author .first {
+  background: url(../assets/images/home/marie_kondo_portrait@2x.jpg) center 10% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-author .second {
+  width: 50%;
+}
+
+.the-author .second > .lockup {
+  padding: 10% 20%;
+}
+
+.the-author .second > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+}
+
+@media screen and (max-width: 560px) {
+  .the-author .second > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-author .second > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-author .second > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 560px) {
+  .the-author .second > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-author .second > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-author .second > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-author .second > .lockup > .heading > .running {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #565553;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+.the-author .second > .lockup > .heading > .running:first-of-type {
+  margin: 0;
+}
+
+.the-author .second > .lockup > .heading > .running:last-of-type {
+  margin-bottom: 0;
+}
+
+.the-author .second > .lockup > .button-group {
+  text-align: left;
+}
+
+@media screen and (max-width: 720px) {
+  .the-author {
+    display: block;
+    margin: 4%;
+  }
+  .the-author .first {
+    width: 100%;
+    height: 360px;
+  }
+  .the-author .second {
+    width: 100%;
+  }
+  .the-author .second > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-method {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.the-method > .content {
+  max-width: 1120px;
+}
+
+.the-method > .content > .lockup {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.the-method > .content > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 560px) {
+  .the-method > .content > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-method > .content > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-method > .content > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 25px auto 10px;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 560px) {
+  .the-method > .content > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-method > .content > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-method > .content > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-method > .content > .button-group {
+  margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .the-method {
+    display: block;
+    margin: 0 4%;
+    padding: 8% 0;
+  }
+  .the-method > .content {
+    width: 100%;
+  }
+  .the-method > .content > .lockup {
+    width: auto !important;
+    margin: 0 auto;
+  }
+  .the-method > .content > .lockup > .heading > .title {
+    width: auto !important;
+  }
+  .the-method > .content > .lockup > .heading > .description {
+    margin: 4% 0;
+    width: auto;
+  }
+  .the-method > .content > .graphic {
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
+
+.current-news {
+  margin: 0 4% 4%;
+  border-top: 1px solid #e2e0dc;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 1920px) {
+  .current-news {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.current-news > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 560px) {
+  .current-news > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .current-news > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.current-news > .tile-group {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: center;
+}
+
+.current-news > .tile-group > .tile {
+  width: 100%;
+  max-width: 50%;
+  background: #f6f4f0;
+  border-right: 1px solid #fff;
+}
+
+.current-news > .tile-group > .tile > .hero {
+  margin: 0;
+  max-width: none;
+  background: #e2e0dc;
+  text-align: center;
+}
+
+.current-news > .tile-group > .tile > .hero > img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.current-news > .tile-group > .tile > .content {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  padding: 6%;
+}
+
+.current-news > .tile-group > .tile > .content > .graphic {
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.current-news > .tile-group > .tile > .content > .graphic > img {
+  width: auto;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup {
+  width: 75%;
+  padding-left: 4%;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup > .heading > .title {
+  color: #2a2a2a;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup > .heading > .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  margin: 10px 0;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media screen and (max-height: 700px) {
+  .current-news > .tile-group > .tile > .content > .lockup > .heading > .description {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+.jp .current-news > .tile-group > .tile > .content > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup .button-group {
+  margin-top: 15px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup .button-group a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #60caad;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding: 8px 0;
+  border: 2px solid #60caad;
+  padding: 14px 15px 12px;
+}
+
+.current-news > .tile-group > .tile > .content > .lockup .button-group a:hover {
+  opacity: 1;
+  background: #60caad;
+  color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .current-news > .tile-group {
+    display: block;
+  }
+  .current-news > .tile-group > .tile {
+    max-width: 100%;
+    padding-top: 8%;
+  }
+  .current-news > .tile-group > .tile:first-of-type {
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .current-news > .tile-group > .tile > .content {
+    display: block;
+  }
+  .current-news > .tile-group > .tile > .content > .graphic {
+    width: 100%;
+    max-height: 80px;
+  }
+  .current-news > .tile-group > .tile > .content > .graphic > img {
+    max-width: 180px;
+    max-height: 80px;
+  }
+  .current-news > .tile-group > .tile > .content > .lockup {
+    margin-top: 2%;
+    width: 100%;
+    padding-left: 0;
+  }
+  .current-news > .tile-group > .tile > .content > .lockup > .heading > .subtitle {
+    margin-bottom: 2%;
+  }
+}
+
+.the-books {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-books {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-books .second {
+  background: url(../assets/images/home/book_hero@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-books .first {
+  width: 50%;
+  position: relative;
+}
+
+.the-books .first > .lockup {
+  padding: 10% 20%;
+}
+
+.the-books .first > .lockup > .heading > .graphic {
+  width: 220px;
+  margin-left: -7px;
+  margin-bottom: 36px;
+}
+
+.the-books .first > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-books .first > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-books .first > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-books .first > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-books .first > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-books .first > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-books .first > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-books .first > .lockup > .button-group {
+  text-align: left;
+}
+
+.the-books .first > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 560px) {
+  .the-books .first > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-books .first > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-books .first > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-books {
+    display: block;
+    margin: 4%;
+  }
+  .the-books .second {
+    width: 100%;
+    height: 360px;
+  }
+  .the-books .first {
+    width: 100%;
+  }
+  .the-books .first > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-app {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-app {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-app .first {
+  background: url(../assets/images/home/app_hero@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.jp .the-app .first {
+  background: url(../assets/images/home/app_hero_jp@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-app .second {
+  width: 50%;
+  position: relative;
+}
+
+.the-app .second > .lockup {
+  padding: 10% 20%;
+}
+
+.the-app .second > .lockup > .heading > .graphic {
+  width: 110px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+}
+
+.jp .the-app .second > .lockup > .heading > .graphic {
+  width: 80px;
+}
+
+.the-app .second > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-app .second > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-app .second > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-app .second > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-app .second > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-app .second > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-app .second > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-app .second > .lockup > .heading > .description .minor {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.the-app .second > .lockup > .button-group .download-app-store {
+  opacity: 1;
+  display: block;
+  width: 195px;
+  text-align: left;
+  padding: 0;
+}
+
+.the-app .second > .lockup > .button-group .download-app-store img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.the-app .second > .lockup > .button-group .download-app-store:hover {
+  opacity: 0.6;
+}
+
+.the-app .second > .lockup > .button-group .download-app-store:active {
+  opacity: 0.6;
+}
+
+.jp .the-app .second > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px !important;
+}
+
+@media screen and (max-width: 560px) {
+  .jp .the-app .second > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .jp .the-app .second > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .jp .the-app .second > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-app {
+    display: block;
+    margin: 4%;
+  }
+  .the-app .first {
+    width: 100%;
+    height: 360px;
+  }
+  .the-app .second {
+    width: 100%;
+  }
+  .the-app .second > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-seminars {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 0 4% 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-seminars {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-seminars .first {
+  background: url(/assets/images/home/consultant_session_pointer@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-seminars .second {
+  width: 50%;
+  position: relative;
+}
+
+.the-seminars .second > .lockup {
+  padding: 10% 20%;
+}
+
+.the-seminars .second > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-seminars .second > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-seminars .second > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-seminars .second > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-seminars .second > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-seminars .second > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-seminars .second > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-seminars .second > .lockup > .button-group {
+  text-align: left;
+}
+
+.the-seminars .second > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 560px) {
+  .the-seminars .second > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-seminars .second > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-seminars .second > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-seminars {
+    display: block;
+    margin: 4%;
+  }
+  .the-seminars .first {
+    width: 100%;
+    height: 360px;
+  }
+  .the-seminars .second {
+    width: 100%;
+  }
+  .the-seminars .second > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-consultants {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 0 4% 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-consultants {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-consultants .first {
+  background: url(/assets/images/home/splash_folding_method@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-consultants .second {
+  width: 50%;
+  position: relative;
+}
+
+.the-consultants .second > .lockup {
+  padding: 10% 20%;
+}
+
+.the-consultants .second > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-consultants .second > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-consultants .second > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-consultants .second > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-consultants .second > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-consultants .second > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-consultants .second > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-consultants .second > .lockup > .button-group {
+  text-align: left;
+}
+
+.the-consultants .second > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 560px) {
+  .the-consultants .second > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-consultants .second > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-consultants .second > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-consultants {
+    display: block;
+    margin: 4%;
+  }
+  .the-consultants .first {
+    width: 100%;
+    height: 360px;
+  }
+  .the-consultants .second {
+    width: 100%;
+  }
+  .the-consultants .second > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-association {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-association {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-association .second {
+  background: url(../assets/images/home/consultant_session_pointer@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-association .first {
+  width: 50%;
+  position: relative;
+}
+
+.the-association .first > .lockup {
+  padding: 10% 20%;
+}
+
+.the-association .first > .lockup > .heading > .graphic {
+  width: 220px;
+  margin-left: -7px;
+  margin-bottom: 36px;
+}
+
+.the-association .first > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-association .first > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-association .first > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-association .first > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-association .first > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-association .first > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-association .first > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-association .first > .lockup > .button-group {
+  text-align: left;
+}
+
+.the-association .first > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 560px) {
+  .the-association .first > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-association .first > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-association .first > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-association {
+    display: block;
+    margin: 4%;
+  }
+  .the-association .second {
+    width: 100%;
+    height: 360px;
+  }
+  .the-association .first {
+    width: 100%;
+  }
+  .the-association .first > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-books-jp {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-books-jp {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-books-jp .second {
+  background: url(../assets/images/home/book_hero_jp@2x.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-books-jp .first {
+  width: 50%;
+  position: relative;
+}
+
+.the-books-jp .first > .lockup {
+  padding: 10% 20%;
+}
+
+.the-books-jp .first > .lockup > .heading > .graphic {
+  width: 220px;
+  margin-left: -7px;
+  margin-bottom: 36px;
+}
+
+.the-books-jp .first > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-books-jp .first > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-books-jp .first > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-books-jp .first > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-books-jp .first > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-books-jp .first > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-books-jp .first > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-books-jp .first > .lockup > .button-group {
+  text-align: left;
+}
+
+.the-books-jp .first > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 560px) {
+  .the-books-jp .first > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-books-jp .first > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-books-jp .first > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-books-jp {
+    display: block;
+    margin: 4%;
+  }
+  .the-books-jp .second {
+    width: 100%;
+    height: 360px;
+  }
+  .the-books-jp .first {
+    width: 100%;
+  }
+  .the-books-jp .first > .lockup {
+    padding: 10%;
+  }
+}
+
+.the-blog {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #60caad;
+  margin: 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .the-blog {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.the-blog .second {
+  background: url(../assets/images/home/blog_jp.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.the-blog .first {
+  width: 50%;
+  position: relative;
+}
+
+.the-blog .first > .lockup {
+  padding: 10% 20%;
+}
+
+.the-blog .first > .lockup > .heading > .graphic {
+  width: 220px;
+  margin-left: -7px;
+  margin-bottom: 36px;
+}
+
+.the-blog .first > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-blog .first > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-blog .first > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-blog .first > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media screen and (max-width: 560px) {
+  .the-blog .first > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-blog .first > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-blog .first > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-blog .first > .lockup > .button-group {
+  text-align: left;
+}
+
+.the-blog .first > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 560px) {
+  .the-blog .first > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-blog .first > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-blog .first > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-blog {
+    display: block;
+    margin: 4%;
+  }
+  .the-blog .second {
+    width: 100%;
+    height: 360px;
+  }
+  .the-blog .first {
+    width: 100%;
+  }
+  .the-blog .first > .lockup {
+    padding: 10%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

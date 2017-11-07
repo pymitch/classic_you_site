@@ -25,7 +25,10 @@ SECRET_KEY = '4$5ekytxb=!!tgyeyob%26$gy%d6b*-sm%ws*g(w9-+g4h$kjf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'http://pymitch.pythonanywhere.com/',
+    'http://classicyoudesigns.com'
+]
 
 
 # Application definition
@@ -119,5 +122,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "classic_you_site/static"),
+    '/var/www/static/',
+]
 
 STATIC_URL = '/static/'

@@ -1,0 +1,194 @@
+@import "defs";
+
+body > .header {
+    position: relative;
+    margin: 0 4%;
+    >.site-architecture {
+        @include flex();
+        justify-content: space-between;
+        padding: 35px 0;
+        border-bottom: 1px solid $sand;
+        >.logo-lockup {
+            >a {
+                position: relative;
+                display: block;
+                background: url("/assets/images/shared/konmari_masonry.png") 0 0 no-repeat;
+                @include background-size(210px);
+                font-size: 16px;
+                text-indent: -99999em;
+                height: 40px;
+                width: 220px;
+            }
+        }
+        >.navigation {
+            @include flex();
+            -webkit-flex-direction: row; 
+            flex-direction: row;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+            /* Dropdown menu */
+            >.sub-navigation-group {
+                position: relative;
+                .sub-navigation {
+                    @include box-shadow(0, 3px, 10px, 0, rgba(0,0,0,0.2));
+                    @include border-radius(5px);
+                    z-index: 5;
+                    position: absolute;
+                    top: 38px;
+                    left: 0;
+                    display: none;
+                    background: #fff;
+                    min-width: 240px;
+                    padding: 12px 10px;
+                    >a {
+                    text-align: left;
+                        padding: 15px 0;
+                    }
+                }
+                &:hover {
+                    .sub-navigation {
+                        display: block;
+                    }
+                }
+            }
+            a {
+                @include ui-small-caps();
+                display: block;
+                margin: 0 10px 0 13px;
+                padding: 17px 0;
+                text-align: center;
+                color: $stone;
+                &.consultant-portal {
+                    color: $jade;
+                    border-left: 1px solid $sand;
+                    padding-left: 23px;
+                    margin-left: 10px;
+                    line-height: 14px;
+                }
+                &.udemy-portal {
+                    color: $jade;
+                    line-height: 14px;
+                }
+                &:hover, 
+                &.selected {
+                    color: $jade;
+                }
+            }
+        }
+    }
+    >.mobile-site-architecture {
+        border-bottom: 1px solid $sand;
+        >.navigation-trigger {
+            display: none;
+        }
+        label[for="navigation-trigger"] {
+            @include ui-small-caps();
+            display: block;
+            position: relative;
+            padding: 16px 0 14px;
+            text-align: center;
+            color: $stone;
+            cursor: pointer;
+        }
+        >.menu {
+            display: none;
+            background: $muslin;
+            /* Dropdown menu */
+            >.sub-navigation-group {
+                position: relative;
+                .sub-navigation {
+                    display: block;
+                    background: #fff;
+                    margin: 0 10%;
+                    >a {
+                        text-align: center;
+                    }
+                }
+            }
+            a {
+                @include ui-small-caps();
+                display: block;
+                padding: 16px 0 14px;
+                text-align: center;
+                color: $stone;
+                &.consultant-portal, &.udemy-portal {
+                    color: $jade;
+                    line-height: 14px;
+                }
+                &:hover, 
+                &.selected {
+                    color: $jade;
+                }
+            }
+        }
+        #navigation-trigger:checked ~ .menu {
+            display: block;
+        }
+        #navigation-trigger:checked ~ label[for="navigation-trigger"] {
+            &:after {
+                display: block;
+                position: absolute;
+                top: 16px;
+                right: 13px;
+                content: "× Close";
+                color: $zinc;
+                font-size: 12px;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            display: none;
+        }
+    }
+}
+
+/* Responsive */
+@media screen and (min-width: 1920px) {
+    body > .header {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1180px) {
+    body > .header {
+        >.site-architecture {
+            padding: 15px 0;
+            display: block;
+            >.logo-lockup {
+                >a {
+                    width: 210px;
+                    margin: 10px auto;
+                }
+            }
+            >.navigation {
+                @include flex();
+                justify-content: space-between;
+                margin-top: 15px;
+                >a {
+                    &.consultant-portal, &.udemy-portal {
+                        margin-left: 0 !important;
+                        padding-left: 10px !important;
+                        border: 0 !important;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    body > .header {
+        >.site-architecture {
+            display: block;
+            >.logo-lockup {
+                >a {
+                    width: 210px;
+                    margin: 10px auto;
+                }
+            }
+            >.navigation {
+                display: none;
+            }
+        }
+    }
+}
+

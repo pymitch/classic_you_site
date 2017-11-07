@@ -1,0 +1,316 @@
+/* Colors */
+$jade: #60caad; /* 96, 202, 173 */
+$zinc: #2a2a2a;
+$pewter: #444;
+$tarnish: #565553;
+$stone: #7b7976;
+$newsprint: #a2a19e;
+$sand: #e2e0dc;
+$muslin: #f6f4f0;
+$cinnabar: #dd3747;
+
+/* Consultant Colors */
+$green: #63917a;
+$bronze: #c89192;
+$silver: #9fadc8;
+$gold: #f0cc5d;
+$platinum: #85617e;
+$master: #3f4357;
+
+@mixin japanese {
+    font-family:"Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+@mixin benton-sans-thin {
+    font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+    font-weight: 100;
+}
+@mixin benton-sans-extra-light {
+    font-family: "Benton Sans Ext Light", "Avenir Light", Avenir, sans-serif;
+    font-weight: 200;
+}
+@mixin benton-sans-book {
+    font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+    font-weight: 200;
+}
+@mixin benton-sans-medium {
+    font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+}
+@mixin absolute-suite($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin flex() {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+}
+@mixin opacity($opacity) {
+    opacity: $opacity;
+}
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin limit-width-1920() {
+    @media screen and (min-width: 1920px) {
+        max-width: 1800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@mixin box-shadow(  $offset-x,
+                    $offset-y,
+                    $blur-radius,
+                    $spread-radius,
+                    $color,
+                    $inset: null
+                    ) {
+    box-shadow: $inset $offset-x $offset-y $blur-radius $spread-radius $color;
+    -moz-box-shadow: $inset $offset-x $offset-y $blur-radius $spread-radius $color;
+    -webkit-box-shadow: $inset $offset-x $offset-y $blur-radius $spread-radius $color;
+}
+@mixin uppercase($letterspacing: 3px) {
+    text-transform: uppercase;
+    letter-spacing: $letterspacing;
+}
+@mixin inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+@mixin transition($properties, $speed, $easing: cubic-bezier(0.175, 0.885, 0.32, 1.275)) {
+    -webkit-transition: $properties $speed $easing;
+    -moz-transition: $properties $speed $easing;
+    transition: $properties $speed $easing;
+}
+@mixin ui-small-caps($weight: null) {
+    @include uppercase();
+    font-size: 12px;
+    line-height: 10px;
+    @if $weight == book {
+        @include benton-sans-book();
+    }
+    @else {
+        @include benton-sans-medium();
+    }
+}
+@mixin title($type: large) {
+    color: $jade;
+    @if $type == large {
+        @include benton-sans-thin();
+        font-size: 58px;
+        line-height: 64px;
+    }
+    @else if $type == small {
+        @include benton-sans-book();
+        font-size: 22px;
+        line-height: 28px;
+    }
+    @media screen and (max-width: 560px) {
+        @if $type == large {
+            font-size: 52px;
+            line-height: 56px;
+        }
+    }
+    @media screen and (max-height: 700px) {
+        @if $type == large {
+            font-size: 58px;
+            line-height: 58px;
+        }
+        @else if $type == small {
+            font-size: 23px;
+            line-height: 33px;
+        }
+    }
+}
+@mixin description($type: large) {
+    @include benton-sans-book();
+    color: $stone;
+    @if $type == large {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    @else if $type == small {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    @media screen and (max-width: 560px) {
+        @if $type == large {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    @media screen and (max-height: 700px) {
+        @if $type == large {
+            font-size: 19px;
+            line-height: 29px;
+        }
+        @else if $type == small {
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+    .jp & {
+        @include japanese();
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@mixin running-text() {
+    @include benton-sans-book();
+    color: $tarnish;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0;
+    &:first-of-type {
+        margin: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+@mixin note-text() {
+    @include benton-sans-medium();
+    color: $newsprint;
+    font-size: 14px;
+    line-height: 20px;
+    .jp & {
+        @include japanese();
+    }
+}
+@mixin button($type: null) {
+    display: block;
+    text-align: center;
+    /* All-caps small button */
+    @if $type == majascule {
+        @include ui-small-caps();
+        color: $jade;
+    }
+    @else if $type == minor {
+        color: green;
+    }
+    @else if $type == fill {
+        @include description();
+        @include border-radius(33px);
+        @include inline-block();
+        position: relative;
+        padding: 15px 30px 14px;
+        color: #fff;
+        background: $jade;
+        border: 1px solid $jade;
+    }
+    /* Standard button */
+    @else {
+        @include description();
+        @include border-radius(33px);
+        @include inline-block();
+        color: $jade;
+        font-size: 22px;
+        line-height: 28px;
+        position: relative;
+        border: 1px solid $jade;
+        padding: 11px 25px 10px;
+    }
+}
+@mixin input() {
+    @include border-radius(33px);
+    @include description();
+    padding: 11px 30px 10px;
+    margin: 0;
+    border: 2px solid $sand;
+    outline: 0;
+    color: $stone;
+    font-size: 22px;
+    line-height: 28px;
+}
+@mixin input-small() {
+    @include benton-sans-medium();
+    @include border-radius(33px);
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 17px;
+    border: 2px solid $sand;
+    outline: 0;
+    color: $tarnish;
+    width: 100%;
+    -webkit-appearance: none;
+}
+@mixin background-size($value: cover) {
+    -webkit-background-size: $value;
+    -moz-background-size: $value;
+    background-size: $value;
+}
+%linkFeedback {
+    cursor: pointer;
+}
+@mixin clear-fix() {
+    content: "";
+    display: block;
+    clear: both;
+}
+@mixin consultant-avatar {
+    .graphic {
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        z-index: 1;
+        &:nth-of-type(2) {
+            margin-left: -25px;
+            z-index: 2;
+        }
+        >.sticker {
+            position: absolute;
+            right: -2px;
+            bottom: -2px;
+            z-index: 3;
+            width: 40px;
+            height: 40px;
+            background-image: url("/assets/images/shared/facebook_glyph.svg");
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            @include background-size(40px);
+            &.green-badge { background-image: url("/assets/images/consultants/badges/badge_green_120.png"); }
+            &.bronze-badge { background-image: url("/assets/images/consultants/badges/badge_bronze_120.png"); }
+            &.silver-badge { background-image: url("/assets/images/consultants/badges/badge_silver_120.png"); }
+            &.gold-badge { background-image: url("/assets/images/consultants/badges/badge_gold_120.png"); }
+            &.platinum-badge { background-image: url("/assets/images/consultants/badges/badge_platinum_120.png"); }
+            &.master-badge { background-image: url("/assets/images/consultants/badges/badge_master_120.png"); }
+        }
+        >.clipping {
+            @include border-radius(50%);
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            background: #fff;
+            /*
+            &:after {
+                @include box-shadow(0,0,0,6px,rgba(0,0,0,0.1), inset);
+                @include border-radius(50%);
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
+            */
+            >img {
+                position: relative;
+                display: block;
+                max-width: 100%;
+                width: 100%;
+                z-index: 1;
+            }
+        }
+    }
+}

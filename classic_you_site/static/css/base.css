@@ -1,0 +1,2551 @@
+@charset "UTF-8";
+/* Colors */
+/* 96, 202, 173 */
+/* Consultant Colors */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  font: 23px "Benton Sans Book", "Avenir Medium", Avenir, sans-serif;
+  color: #7b7976;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, ul, ol, blockquote, q {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #60caad;
+}
+
+a:hover {
+  opacity: 0.8;
+  color: #68dabb;
+}
+
+a:active {
+  opacity: 1;
+  color: #56b49a;
+}
+
+i {
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-input-placeholder {
+  color: #a2a19e;
+}
+
+::-moz-placeholder {
+  color: #a2a19e;
+}
+
+:-ms-input-placeholder {
+  color: #a2a19e;
+}
+
+input:-moz-placeholder {
+  color: #a2a19e;
+}
+
+/* Retina images */
+.graphic.at2x img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 720px) {
+  body > .content {
+    padding-top: 40px;
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  max-width: 720px;
+  margin: 6% auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1320px) {
+  .hero {
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .jp .hero {
+    width: auto;
+    padding: 0 5%;
+  }
+}
+
+.hero > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .hero > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .hero > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.hero > .heading > .title .japanese-in-situ {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  opacity: 0.7;
+  display: block;
+  margin: 20px 0;
+}
+
+.hero > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 20px auto 0;
+  padding: 0 5%;
+}
+
+@media screen and (max-width: 560px) {
+  .hero > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .hero > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .hero > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.hero > .heading > .description .japanese-in-situ {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  opacity: 0.7;
+  display: block;
+  margin: 10px 0;
+}
+
+.hero > .heading > .description > em {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #565553;
+  font-style: normal;
+}
+
+.note.alert {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 5px solid #e5e4e1;
+  text-align: center;
+  margin: 10px 4%;
+  padding: 10px 15px;
+  background: #f6f4f0;
+}
+
+.note.alert > p {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #565553;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+.note.alert > p:first-of-type {
+  margin: 0;
+}
+
+.note.alert > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.note.success {
+  color: #60caad;
+}
+
+.button-group {
+  content: "";
+  display: block;
+  clear: both;
+  text-align: center;
+  margin: 4% 0;
+}
+
+.button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.more-konmari {
+  margin: 140px 4% 0;
+}
+
+@media screen and (min-width: 1920px) {
+  .more-konmari {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.more-konmari > .content > .lockup > .heading > .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+}
+
+.more-konmari > .content > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+}
+
+@media screen and (max-width: 560px) {
+  .more-konmari > .content > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .more-konmari > .content > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.jp .more-konmari > .content > .lockup > .heading > .title {
+  /* Special override to keep Roman letterforms */
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 72px;
+  line-height: 78px;
+}
+
+.more-konmari > .content > .tile-group {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  margin-top: 40px;
+  align-items: flex-end;
+}
+
+.more-konmari > .content > .tile-group .tile {
+  display: block;
+  width: 25%;
+}
+
+.more-konmari > .content > .tile-group .tile.more-books .graphic {
+  margin-left: -5px;
+  max-width: 290px;
+  padding-right: 10%;
+}
+
+.more-konmari > .content > .tile-group .tile.more-apps .graphic {
+  margin-left: -1px;
+  max-width: 82px;
+}
+
+.jp .more-konmari > .content > .tile-group .tile.more-apps .heading {
+  padding-right: 60px;
+}
+
+.more-konmari > .content > .tile-group .tile.more-social .graphic {
+  margin-left: -3px;
+  max-width: 232px;
+}
+
+.more-konmari > .content > .tile-group .tile.more-social .heading {
+  max-width: 280px;
+}
+
+.more-konmari > .content > .tile-group .tile.more-video .graphic {
+  margin-left: -3px;
+  max-width: 216px;
+}
+
+.jp .more-konmari > .content > .tile-group .tile.more-video .graphic {
+  margin-left: -3px;
+  max-width: 232px;
+}
+
+.more-konmari > .content > .tile-group .tile > .graphic {
+  width: 100%;
+  padding-right: 3%;
+}
+
+.more-konmari > .content > .tile-group .tile > .heading {
+  height: 170px;
+  padding-top: 40px;
+  padding-right: 3%;
+}
+
+.jp .more-konmari > .content > .tile-group .tile > .heading {
+  min-height: 40px;
+  max-height: 120px;
+}
+
+.more-konmari > .content > .tile-group .tile > .heading > .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #7b7976;
+  margin-bottom: 10px;
+}
+
+.more-konmari > .content > .tile-group .tile > .heading > .title {
+  font-size: 18px;
+}
+
+.jp .more-konmari > .content > .tile-group .tile > .heading > .title {
+  font-size: 15px;
+}
+
+.more-konmari > .content > .button-group {
+  content: "";
+  display: block;
+  clear: both;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.more-konmari > .content > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+}
+
+@media screen and (max-width: 560px) {
+  .more-konmari > .content > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .more-konmari > .content > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .more-konmari > .content > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 720px) {
+  .more-konmari {
+    margin: 8% 4% 0;
+    text-align: center;
+  }
+  .more-konmari > .content > .tile-group {
+    display: block;
+    margin: 0;
+  }
+  .more-konmari > .content > .tile-group .tile {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 8% 0;
+    border-bottom: 1px solid #e2e0dc;
+  }
+  .more-konmari > .content > .tile-group .tile:last-of-type {
+    border-bottom: 0;
+  }
+  .more-konmari > .content > .tile-group .tile > .graphic {
+    width: 100%;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+  }
+  .more-konmari > .content > .tile-group .tile > .heading {
+    height: auto;
+    padding: 4% 0 0 !important;
+    max-width: none !important;
+  }
+}
+
+#general-error-message-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  background: rgba(96, 202, 173, 0.9);
+}
+
+#general-error-message-container .message-body {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.8);
+  background: #fff;
+  max-width: 520px;
+  max-height: 260px;
+  margin: 10%;
+}
+
+#general-error-message-container .message-body .button-group {
+  border-top: 1px solid #60caad;
+}
+
+#general-error-message-container.show {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+}
+
+#general-error-message {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px;
+}
+
+#general-error-message-close-alert {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 20px;
+  outline: 0;
+  color: #60caad;
+  border: 0;
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#general-error-message-close-alert:hover {
+  color: #565553;
+}
+
+#general-error-message-close-alert:active {
+  color: #60caad;
+}
+
+.the-consultants-video {
+  background: #444;
+  margin: 4%;
+}
+
+.the-consultants-video .first {
+  background: #444;
+  position: relative;
+  padding: 0 20%;
+}
+
+.the-consultants-video .first > .videoplayer {
+  box-shadow: 0 40px 70px -20px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0 40px 70px -20px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 40px 70px -20px rgba(0, 0, 0, 0.9);
+  position: relative;
+  padding: 0;
+  padding-top: 56.25%;
+  height: 0;
+  width: 100%;
+}
+
+.the-consultants-video .first > .videoplayer iframe,
+.the-consultants-video .first > .videoplayer object,
+.the-consultants-video .first > .videoplayer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.the-consultants-video .second {
+  position: relative;
+  padding: 0;
+}
+
+.the-consultants-video .second > .lockup {
+  text-align: center;
+}
+
+.the-consultants-video .second > .lockup > .heading > .graphic {
+  width: 80px;
+  margin: 0 auto;
+  padding: 30px 0 10px;
+}
+
+.the-consultants-video .second > .lockup > .heading > .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  opacity: 0.5;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.the-consultants-video .second > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -6px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 560px) {
+  .the-consultants-video .second > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-consultants-video .second > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.the-consultants-video .second > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  max-width: 640px;
+  margin: 5% auto 0;
+  color: #ccc;
+}
+
+@media screen and (max-width: 560px) {
+  .the-consultants-video .second > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-consultants-video .second > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-consultants-video .second > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-consultants-video .second > .lockup > .button-group {
+  padding: 25px 0 5%;
+}
+
+.the-consultants-video .second > .lockup > .button-group a {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  border: 1px solid #60caad;
+  color: #fff;
+  background: #60caad;
+}
+
+@media screen and (max-width: 560px) {
+  .the-consultants-video .second > .lockup > .button-group a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .the-consultants-video .second > .lockup > .button-group a {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .the-consultants-video .second > .lockup > .button-group a {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.the-consultants-video .second > .lockup > .note {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 520px;
+  margin: 40px auto 0;
+  padding: 30px 0 50px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 720px) {
+  .the-consultants-video {
+    display: block;
+    margin: 4%;
+  }
+  .the-consultants-video .first {
+    padding: 0 4%;
+  }
+  .the-consultants-video .second > .lockup > .heading > .graphic {
+    padding: 5% 0 10px;
+  }
+  .the-consultants-video .second > .lockup > .heading > .subtitle {
+    margin-bottom: 20px;
+  }
+  .the-consultants-video .second > .lockup > .heading > .title {
+    margin-bottom: 7%;
+  }
+  .the-consultants-video .second > .lockup > .heading > .description {
+    margin: 6% 10%;
+  }
+  .the-consultants-video .second > .lockup > .button-group {
+    padding: 0 0 6%;
+  }
+}
+
+/* Colors */
+/* 96, 202, 173 */
+/* Consultant Colors */
+body > .header {
+  position: relative;
+  margin: 0 4%;
+}
+
+body > .header > .site-architecture {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  padding: 35px 0;
+  border-bottom: 1px solid #e2e0dc;
+}
+
+body > .header > .site-architecture > .logo-lockup > a {
+  position: relative;
+  display: block;
+  background: url("/assets/images/shared/konmari_masonry.png") 0 0 no-repeat;
+  -webkit-background-size: 210px;
+  -moz-background-size: 210px;
+  background-size: 210px;
+  font-size: 16px;
+  text-indent: -99999em;
+  height: 40px;
+  width: 220px;
+}
+
+body > .header > .site-architecture > .navigation {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  /* Dropdown menu */
+}
+
+body > .header > .site-architecture > .navigation > .sub-navigation-group {
+  position: relative;
+}
+
+body > .header > .site-architecture > .navigation > .sub-navigation-group .sub-navigation {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 5;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: none;
+  background: #fff;
+  min-width: 240px;
+  padding: 12px 10px;
+}
+
+body > .header > .site-architecture > .navigation > .sub-navigation-group .sub-navigation > a {
+  text-align: left;
+  padding: 15px 0;
+}
+
+body > .header > .site-architecture > .navigation > .sub-navigation-group:hover .sub-navigation {
+  display: block;
+}
+
+body > .header > .site-architecture > .navigation a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  display: block;
+  margin: 0 10px 0 13px;
+  padding: 17px 0;
+  text-align: center;
+  color: #7b7976;
+}
+
+body > .header > .site-architecture > .navigation a.consultant-portal {
+  color: #60caad;
+  border-left: 1px solid #e2e0dc;
+  padding-left: 23px;
+  margin-left: 10px;
+  line-height: 14px;
+}
+
+body > .header > .site-architecture > .navigation a.udemy-portal {
+  color: #60caad;
+  line-height: 14px;
+}
+
+body > .header > .site-architecture > .navigation a:hover, body > .header > .site-architecture > .navigation a.selected {
+  color: #60caad;
+}
+
+body > .header > .mobile-site-architecture {
+  border-bottom: 1px solid #e2e0dc;
+}
+
+body > .header > .mobile-site-architecture > .navigation-trigger {
+  display: none;
+}
+
+body > .header > .mobile-site-architecture label[for="navigation-trigger"] {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  display: block;
+  position: relative;
+  padding: 16px 0 14px;
+  text-align: center;
+  color: #7b7976;
+  cursor: pointer;
+}
+
+body > .header > .mobile-site-architecture > .menu {
+  display: none;
+  background: #f6f4f0;
+  /* Dropdown menu */
+}
+
+body > .header > .mobile-site-architecture > .menu > .sub-navigation-group {
+  position: relative;
+}
+
+body > .header > .mobile-site-architecture > .menu > .sub-navigation-group .sub-navigation {
+  display: block;
+  background: #fff;
+  margin: 0 10%;
+}
+
+body > .header > .mobile-site-architecture > .menu > .sub-navigation-group .sub-navigation > a {
+  text-align: center;
+}
+
+body > .header > .mobile-site-architecture > .menu a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  display: block;
+  padding: 16px 0 14px;
+  text-align: center;
+  color: #7b7976;
+}
+
+body > .header > .mobile-site-architecture > .menu a.consultant-portal, body > .header > .mobile-site-architecture > .menu a.udemy-portal {
+  color: #60caad;
+  line-height: 14px;
+}
+
+body > .header > .mobile-site-architecture > .menu a:hover, body > .header > .mobile-site-architecture > .menu a.selected {
+  color: #60caad;
+}
+
+body > .header > .mobile-site-architecture #navigation-trigger:checked ~ .menu {
+  display: block;
+}
+
+body > .header > .mobile-site-architecture #navigation-trigger:checked ~ label[for="navigation-trigger"]:after {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  content: "× Close";
+  color: #2a2a2a;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 960px) {
+  body > .header > .mobile-site-architecture {
+    display: none;
+  }
+}
+
+/* Responsive */
+@media screen and (min-width: 1920px) {
+  body > .header {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  body > .header > .site-architecture {
+    padding: 15px 0;
+    display: block;
+  }
+  body > .header > .site-architecture > .logo-lockup > a {
+    width: 210px;
+    margin: 10px auto;
+  }
+  body > .header > .site-architecture > .navigation {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  body > .header > .site-architecture > .navigation > a.consultant-portal, body > .header > .site-architecture > .navigation > a.udemy-portal {
+    margin-left: 0 !important;
+    padding-left: 10px !important;
+    border: 0 !important;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body > .header > .site-architecture {
+    display: block;
+  }
+  body > .header > .site-architecture > .logo-lockup > a {
+    width: 210px;
+    margin: 10px auto;
+  }
+  body > .header > .site-architecture > .navigation {
+    display: none;
+  }
+}
+
+/* Colors */
+/* 96, 202, 173 */
+/* Consultant Colors */
+/* Forms */
+.form-contact,
+.form-starter {
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+.form-contact.with-emphasis form,
+.form-starter.with-emphasis form {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 5px solid #f6f4f0;
+  padding: 8%;
+  /* This attempts to "intelligently" find the first elements at the top and remove any margins they have so parent padding and child margins don't add up too much and cause excessive space */
+}
+
+.form-contact.with-emphasis form > div:nth-child(1),
+.form-starter.with-emphasis form > div:nth-child(1) {
+  margin-top: 0;
+}
+
+.form-contact.with-emphasis form > div:nth-child(1) > *:nth-of-type(1),
+.form-starter.with-emphasis form > div:nth-child(1) > *:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.form-contact form,
+.form-starter form {
+  width: 100%;
+  position: relative;
+}
+
+.form-contact form .hidden,
+.form-starter form .hidden {
+  display: none;
+}
+
+.form-contact form > .field-group,
+.form-starter form > .field-group {
+  clear: both;
+  margin: 30px 0;
+}
+
+.form-contact form > .field-group > .title,
+.form-starter form > .field-group > .title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #2a2a2a;
+  margin: 8% 0 4%;
+}
+
+.form-contact form > .field-group > .label,
+.form-starter form > .field-group > .label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  clear: both;
+  display: block;
+  margin: 0 0 10px 25px;
+}
+
+.form-contact form > .field-group > .input,
+.form-starter form > .field-group > .input {
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  padding: 11px 30px 10px;
+  margin: 0;
+  border: 2px solid #e2e0dc;
+  outline: 0;
+  color: #7b7976;
+  font-size: 22px;
+  line-height: 28px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 560px) {
+  .form-contact form > .field-group > .input,
+  .form-starter form > .field-group > .input {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .form-contact form > .field-group > .input,
+  .form-starter form > .field-group > .input {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .form-contact form > .field-group > .input, .jp
+.form-starter form > .field-group > .input {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-contact form > .field-group .note,
+.form-starter form > .field-group .note {
+  text-align: left;
+  width: 90%;
+  margin: 8px 0 0 20px;
+}
+
+.form-contact form > .field-group .note.error,
+.form-starter form > .field-group .note.error {
+  color: #dd3747;
+}
+
+.form-contact form .sample,
+.form-starter form .sample {
+  display: none;
+  margin: 4% 0 0;
+}
+
+.form-contact form .sample .title,
+.form-starter form .sample .title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  text-align: center;
+}
+
+.form-contact form .sample .paper,
+.form-starter form .sample .paper {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, 0.06);
+  background: #f6f4f0;
+  background: -moz-linear-gradient(top, #f6f4f0 60%, white 100%);
+  background: -webkit-linear-gradient(top, #f6f4f0 60%, white 100%);
+  background: linear-gradient(to bottom, #f6f4f0 60%, white 100%);
+  padding: 4%;
+  margin: 2% 0 0;
+}
+
+.form-contact form .sample .paper > p,
+.form-starter form .sample .paper > p {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #565553;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-contact form .sample .paper > p:first-of-type,
+.form-starter form .sample .paper > p:first-of-type {
+  margin: 0;
+}
+
+.form-contact form .sample .paper > p:last-of-type,
+.form-starter form .sample .paper > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-contact form .select,
+.form-starter form .select {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  background-color: #fff;
+  position: relative;
+  margin: 5px 0 15px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 17px 6px 17px;
+  border: 2px solid #e2e0dc;
+  outline: 0;
+  color: #565553;
+  width: 100%;
+}
+
+.form-contact form .select select,
+.form-starter form .select select {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  font-size: 16px;
+  color: #565553;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+}
+
+.form-contact form .select:after,
+.form-starter form .select:after {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  margin: auto 0;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("/assets/images/shared/dropdown_arrow@2x.png") center right no-repeat;
+  -webkit-background-size: 20px;
+  -moz-background-size: 20px;
+  background-size: 20px;
+}
+
+.form-contact form .selection-group,
+.form-starter form .selection-group {
+  margin: 10px 0;
+  padding: 2px 0 0 40px;
+  position: relative;
+  /* Radio buttons */
+  /* Checkboxes */
+}
+
+.jp .form-contact form .selection-group .label, .jp
+.form-starter form .selection-group .label {
+  font-size: 16px;
+}
+
+.form-contact form .selection-group .label:hover,
+.form-starter form .selection-group .label:hover {
+  color: #60caad;
+}
+
+.form-contact form .selection-group input[type="radio"]:checked + .label,
+.form-starter form .selection-group input[type="radio"]:checked + .label {
+  color: #60caad;
+}
+
+.form-contact form .selection-group input[type="radio"],
+.form-starter form .selection-group input[type="radio"] {
+  display: none;
+}
+
+.form-contact form .selection-group input[type="radio"] + .label,
+.form-starter form .selection-group input[type="radio"] + .label {
+  cursor: pointer;
+}
+
+.form-contact form .selection-group input[type="radio"] + .label:before,
+.form-starter form .selection-group input[type="radio"] + .label:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 2px solid #60caad;
+}
+
+.jp .form-contact form .selection-group input[type="radio"] + .label:before, .jp
+.form-starter form .selection-group input[type="radio"] + .label:before {
+  top: 5px;
+}
+
+.form-contact form .selection-group input[type="radio"]:checked + .label:before,
+.form-starter form .selection-group input[type="radio"]:checked + .label:before {
+  background: #60caad;
+}
+
+.form-contact form .selection-group input[type="radio"]:checked + .label:after,
+.form-starter form .selection-group input[type="radio"]:checked + .label:after {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+}
+
+.jp .form-contact form .selection-group input[type="radio"]:checked + .label:after, .jp
+.form-starter form .selection-group input[type="radio"]:checked + .label:after {
+  top: 7px;
+}
+
+.form-contact form .selection-group input[type="checkbox"]:checked + .label,
+.form-starter form .selection-group input[type="checkbox"]:checked + .label {
+  color: #60caad;
+}
+
+.form-contact form .selection-group input[type="checkbox"],
+.form-starter form .selection-group input[type="checkbox"] {
+  display: none;
+}
+
+.form-contact form .selection-group input[type="checkbox"] + .label,
+.form-starter form .selection-group input[type="checkbox"] + .label {
+  cursor: pointer;
+}
+
+.form-contact form .selection-group input[type="checkbox"] + .label:before,
+.form-starter form .selection-group input[type="checkbox"] + .label:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 2px solid #60caad;
+}
+
+.jp .form-contact form .selection-group input[type="checkbox"] + .label:before, .jp
+.form-starter form .selection-group input[type="checkbox"] + .label:before {
+  top: 5px;
+}
+
+.form-contact form .selection-group input[type="checkbox"]:checked + .label:before,
+.form-starter form .selection-group input[type="checkbox"]:checked + .label:before {
+  background: #60caad;
+  background-image: url("/assets/images/shared/checkmark_ffffff@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 14px;
+  -moz-background-size: 14px;
+  background-size: 14px;
+}
+
+.form-contact form .selection-group input[type="checkbox"]:checked + .label:after,
+.form-starter form .selection-group input[type="checkbox"]:checked + .label:after {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+.jp .form-contact form .selection-group input[type="checkbox"]:checked + .label:after, .jp
+.form-starter form .selection-group input[type="checkbox"]:checked + .label:after {
+  top: 7px;
+}
+
+.form-contact form > .button-group,
+.form-starter form > .button-group {
+  margin: 30px 0 15px;
+}
+
+.form-contact form > .button-group > .note,
+.form-starter form > .button-group > .note {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #a2a19e;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.jp .form-contact form > .button-group > .note, .jp
+.form-starter form > .button-group > .note {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.form-contact form > .button-group > .note.error,
+.form-starter form > .button-group > .note.error {
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  margin: 10px 0;
+  color: #dd3747;
+  background: #fff;
+  padding: 10px;
+}
+
+.form-contact form > .button-group .button,
+.form-starter form > .button-group .button {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  -webkit-transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+  border: 0;
+  background: #60caad;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+  .form-contact form > .button-group .button,
+  .form-starter form > .button-group .button {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .form-contact form > .button-group .button,
+  .form-starter form > .button-group .button {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .form-contact form > .button-group .button, .jp
+.form-starter form > .button-group .button {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-contact form > .button-group .button:hover,
+.form-starter form > .button-group .button:hover {
+  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-contact form > .button-group .button:active,
+.form-starter form > .button-group .button:active {
+  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.form-contact form .note,
+.form-starter form .note {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #a2a19e;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.jp .form-contact form .note, .jp
+.form-starter form .note {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.form-contact form .note a,
+.form-starter form .note a {
+  color: #7b7976;
+}
+
+.form-contact form .note.success,
+.form-starter form .note.success {
+  color: #60caad;
+}
+
+@media screen and (max-width: 720px) {
+  .form-contact,
+  .form-starter {
+    width: auto;
+    margin: 0 4% 10%;
+  }
+  .form-contact form .note,
+  .form-starter form .note {
+    padding: 0 10%;
+  }
+}
+
+/* Colors */
+/* 96, 202, 173 */
+/* Consultant Colors */
+/* Japanese localization */
+.jp .mailing-list .first {
+  padding-bottom: 3%;
+}
+
+@media screen and (max-width: 720px) {
+  .jp .mailing-list {
+    margin: 4%;
+  }
+}
+
+.jp .footer .second .legal .copyright .roman {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+}
+
+.jp .footer .second .localization .roman {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  opacity: 0.75;
+  display: none;
+}
+
+.mailing-list {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  background: #f6f4f0;
+  margin: 0 4%;
+}
+
+@media screen and (min-width: 1920px) {
+  .mailing-list {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.mailing-list.popup {
+  box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.6);
+  display: block;
+  position: fixed;
+  max-width: 640px;
+  max-height: 700px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  display: none;
+}
+
+.mailing-list.popup .close {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 2;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  line-height: 27px;
+  color: #fff;
+  background: #60caad;
+  cursor: pointer;
+}
+
+.mailing-list.popup .close:hover {
+  background: #50a991;
+}
+
+.mailing-list.popup .close:active {
+  background: #dd3747;
+}
+
+.mailing-list.popup .first {
+  text-align: center;
+  padding: 10%;
+  width: 100%;
+  position: relative;
+}
+
+.mailing-list.popup .first > .lockup {
+  padding: 0;
+}
+
+.mailing-list.popup .first > .lockup > .heading {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.mailing-list.popup .first > .lockup > .heading > .description {
+  margin-bottom: 30px;
+}
+
+.mailing-list.popup .first .form {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.mailing-list.popup .first .form .note {
+  text-align: center;
+}
+
+.mailing-list.popup .first .form form .email {
+  float: left;
+  margin: 0 2% 10px 0;
+  width: 78%;
+}
+
+.mailing-list.popup .first .form form .button {
+  float: left;
+  width: 10%;
+}
+
+.mailing-list.popup .first .form form .mc-field-group.input-group {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  margin: 10px 0;
+  background: #f6f4f0;
+  padding: 0;
+  text-align: center;
+}
+
+.mailing-list.popup .first .form form .mc-field-group .title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  margin-bottom: 8px;
+  color: #2a2a2a;
+  display: block;
+}
+
+.mailing-list.popup .first .form form .mc-field-group ul li {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0 30px 0 20px;
+}
+
+.mailing-list.popup .second {
+  width: 100%;
+  display: block;
+  height: 340px;
+  background-image: url("/assets/images/home/marie_kondo_232.jpg");
+}
+
+@media screen and (max-width: 720px) {
+  .mailing-list.popup {
+    top: 4%;
+    right: 4%;
+    bottom: 4%;
+    left: 4%;
+  }
+  .mailing-list.popup .second {
+    display: none;
+  }
+}
+
+.mailing-list.confirm-popup {
+  display: none;
+}
+
+.mailing-list.stacked.lite {
+  display: block;
+}
+
+.mailing-list.stacked.lite .first {
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+
+.mailing-list.stacked.lite .first > .lockup {
+  padding: 0;
+}
+
+.mailing-list.stacked.lite .first > .lockup > .heading {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.mailing-list.stacked.lite .first > .lockup > .heading > .description {
+  margin-bottom: 30px;
+}
+
+.mailing-list.stacked.lite .first .form {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.mailing-list.stacked.lite .first .form .note {
+  text-align: center;
+}
+
+.mailing-list.stacked.lite .first .form form .email {
+  float: left;
+  margin: 0 2% 10px 0;
+  width: 80%;
+}
+
+.mailing-list.stacked.lite .first .form form .button {
+  float: left;
+  width: 18%;
+}
+
+.mailing-list.stacked.lite .first .form form .mc-field-group.input-group {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  margin: 10px 0;
+  background: #f6f4f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.mailing-list.stacked.lite .first .form form .mc-field-group .title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  margin-bottom: 8px;
+  color: #2a2a2a;
+  display: block;
+}
+
+.mailing-list.stacked.lite .first .form form .mc-field-group ul li {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 0 30px 0 20px;
+}
+
+.mailing-list.centered {
+  text-align: center;
+}
+
+.mailing-list.centered > .first {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.mailing-list.centered > .first .form {
+  width: 520px;
+  margin: 0 auto;
+}
+
+.mailing-list.centered > .first .form .email {
+  margin-right: 1%;
+  width: 73%;
+}
+
+.mailing-list.centered > .first .form .button {
+  width: 20%;
+}
+
+.mailing-list .first {
+  width: 50%;
+  position: relative;
+}
+
+.mailing-list .first > .lockup {
+  padding: 10% 20%;
+}
+
+.mailing-list .first > .lockup .social-media {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mailing-list .first > .lockup .social-media > .heading > .title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #7b7976;
+  margin-right: 10px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul {
+  padding: 0;
+  list-style: none;
+  margin-right: -3px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  margin: 0 2px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li a {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-size: 136px 102px;
+  -moz-background-size: 136px 102px;
+  background-size: 136px 102px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  text-indent: -9999em;
+  border: 2px solid #e2e0dc;
+  background-image: url("../assets/images/shared/icon_third_party@2x.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li a:hover {
+  border-color: #737270;
+  opacity: 1;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li a:active {
+  border-color: #737270;
+  background-color: #737270;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.facebook a {
+  background-position: 0 0;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.facebook a:hover {
+  background-position: 0 -34px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.facebook a:active {
+  background-position: 0 -68px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.twitter a {
+  background-position: -34px 0;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.twitter a:hover {
+  background-position: -34px -34px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.twitter a:active {
+  background-position: -34px -68px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.linkedin a {
+  background-position: -68px 0;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.linkedin a:hover {
+  background-position: -68px -34px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.linkedin a:active {
+  background-position: -68px -68px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.instagram a {
+  background-position: -102px 0;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.instagram a:hover {
+  background-position: -102px -34px;
+}
+
+.mailing-list .first > .lockup .social-media .third-party-presence ul li.instagram a:active {
+  background-position: -102px -68px;
+}
+
+.mailing-list .first > .lockup > .heading > .title {
+  color: #60caad;
+  font-family: "Benton Sans Thin", "Avenir Thin", Avenir, sans-serif;
+  font-weight: 100;
+  font-size: 58px;
+  line-height: 64px;
+  /* Get title to obey grid */
+  margin-left: -5px;
+}
+
+@media screen and (max-width: 560px) {
+  .mailing-list .first > .lockup > .heading > .title {
+    font-size: 52px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .mailing-list .first > .lockup > .heading > .title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+.mailing-list .first > .lockup > .heading > .description {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 560px) {
+  .mailing-list .first > .lockup > .heading > .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .mailing-list .first > .lockup > .heading > .description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .mailing-list .first > .lockup > .heading > .description {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.jp .mailing-list .first > .lockup > .heading > .description {
+  margin: 10px 0;
+}
+
+.mailing-list .first .form {
+  position: relative;
+}
+
+.mailing-list .first .form .hidden {
+  display: none;
+}
+
+.mailing-list .first .form form .email {
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  padding: 11px 30px 10px;
+  margin: 0;
+  border: 2px solid #e2e0dc;
+  outline: 0;
+  color: #7b7976;
+  font-size: 22px;
+  line-height: 28px;
+  float: left;
+  margin: 0 10px 1% -2px;
+  width: 70%;
+}
+
+@media screen and (max-width: 560px) {
+  .mailing-list .first .form form .email {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .mailing-list .first .form form .email {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .mailing-list .first .form form .email {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.mailing-list .first .form form .button {
+  display: block;
+  text-align: center;
+  /* All-caps small button */
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #7b7976;
+  font-size: 24px;
+  line-height: 34px;
+  -moz-border-radius: 33px;
+  -webkit-border-radius: 33px;
+  border-radius: 33px;
+  display: inline-block;
+  vertical-align: top;
+  color: #60caad;
+  font-size: 22px;
+  line-height: 28px;
+  position: relative;
+  border: 1px solid #60caad;
+  padding: 11px 25px 10px;
+  min-width: 100px;
+  margin: 0;
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+  width: 20%;
+  border: 0;
+  background: #60caad;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 560px) {
+  .mailing-list .first .form form .button {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .mailing-list .first .form form .button {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
+
+.jp .mailing-list .first .form form .button {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.mailing-list .first .form form .mc-field-group .title {
+  display: none;
+}
+
+.mailing-list .first .form form .mc-field-group ul li {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #a2a19e;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px 0;
+  padding: 0 0 0 20px;
+  position: relative;
+}
+
+.jp .mailing-list .first .form form .mc-field-group ul li {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.mailing-list .first .form form .mc-field-group ul li .label {
+  cursor: pointer;
+}
+
+.mailing-list .first .form form .mc-field-group ul li input[type="checkbox"]:checked + .label {
+  color: #60caad;
+}
+
+.mailing-list .first .form form .mc-field-group ul li input[type="checkbox"] {
+  display: none;
+}
+
+.mailing-list .first .form form .mc-field-group ul li input[type="checkbox"] + .label:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #60caad;
+  cursor: pointer;
+}
+
+.mailing-list .first .form form .mc-field-group ul li input[type="checkbox"]:checked + .label:before {
+  background: #60caad;
+}
+
+.mailing-list .first .form form .mc-field-group ul li input[type="checkbox"]:checked + .label:after {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 2px solid #f6f4f0;
+}
+
+.jp .mailing-list .first .form form .mc-field-group ul li input[type="checkbox"]:checked + .label:after {
+  top: 7px;
+}
+
+.mailing-list .first .form .note {
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  color: #a2a19e;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 10px;
+  clear: both;
+}
+
+.jp .mailing-list .first .form .note {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.mailing-list .first .form .note a {
+  color: #7b7976;
+}
+
+.mailing-list .first #mce-responses {
+  clear: both;
+  width: 360px;
+  clear: both;
+  font-size: 16px;
+  font-family: "Benton Sans Medium";
+}
+
+.mailing-list .first #mce-error-response {
+  color: #ca605d;
+  padding: 18px 0 0;
+}
+
+.mailing-list .first #mce-success-response {
+  color: #60caad;
+  padding: 18px 0 0;
+}
+
+.mailing-list .second {
+  background: url(../assets/images/home/mailing_list_hero@2x.jpg) center -65px no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 50%;
+}
+
+.jp .mailing-list .second {
+  background: url(../assets/images/home/mailing_list_hero_jp@2x.jpg) center -65px no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1600px) {
+  .mailing-list .second {
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .mailing-list .form {
+    position: relative;
+  }
+  .mailing-list .form .hidden {
+    display: none;
+  }
+  .mailing-list .form form .email {
+    float: none !important;
+    margin: 4% 0 !important;
+    width: 100% !important;
+    -webkit-appearance: none;
+  }
+  .mailing-list .form form .button {
+    min-width: none !important;
+    float: none !important;
+    width: 100% !important;
+    -webkit-appearance: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mailing-list .first > .lockup .social-media {
+    display: block;
+  }
+  .mailing-list .first > .lockup .social-media > .heading > .title {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .mailing-list {
+    display: block;
+    margin: 0 4%;
+  }
+  .mailing-list.centered > .first {
+    width: auto;
+  }
+  .mailing-list.centered > .first .form {
+    width: 100%;
+  }
+  .mailing-list.centered > .first .form .email {
+    margin-right: 0;
+    width: 100%;
+  }
+  .mailing-list.centered > .first .form .button {
+    width: 100%;
+  }
+  .mailing-list .first {
+    width: 100%;
+  }
+  .mailing-list .first > .lockup {
+    padding: 10%;
+  }
+  .mailing-list .form {
+    position: relative;
+  }
+  .mailing-list .form .hidden {
+    display: none;
+  }
+  .mailing-list .form form .email {
+    float: none !important;
+    margin: 4% 0 !important;
+    width: 100% !important;
+    -webkit-appearance: none;
+  }
+  .mailing-list .form form .button {
+    min-width: none !important;
+    float: none !important;
+    width: 100% !important;
+    -webkit-appearance: none;
+  }
+  .mailing-list .second {
+    width: 100%;
+    height: 280px;
+    background-position: top center;
+  }
+}
+
+.footer {
+  border-top: 1px solid #e2e0dc;
+  margin: 4% 4% 0;
+  padding: 0 0 80px;
+}
+
+@media screen and (min-width: 1920px) {
+  .footer {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.footer .first .navigation {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  float: left;
+  width: 70%;
+  max-width: 960px;
+  margin-top: 36px;
+}
+
+.footer .first .navigation a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 10px;
+  font-family: "Benton Sans Medium", "Avenir Light", Avenir, sans-serif;
+  /* This balances the letter-spacaing on the right */
+  padding-left: 3px;
+  text-align: center;
+  color: #7b7976;
+}
+
+.footer .first .navigation a.selected {
+  color: #60caad;
+}
+
+.footer .first .newsletter {
+  margin: 10px 0;
+  padding: 20px 0;
+  background: #f6f4f0;
+  text-align: center;
+}
+
+.footer .first .newsletter a {
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  background: url("/assets/images/shared/icon_envelope@2x.png") 0 1px no-repeat;
+  -webkit-background-size: 18px 14px;
+  -moz-background-size: 18px 14px;
+  background-size: 18px 14px;
+  padding-left: 28px;
+  display: inline-block;
+  font-size: 16px;
+  text-align: right;
+}
+
+.jp .footer .first .newsletter a {
+  font-size: 12px;
+}
+
+.footer .second {
+  content: "";
+  display: block;
+  clear: both;
+  font-family: "Benton Sans Book", "Avenir Book", Avenir, sans-serif;
+  font-weight: 200;
+  color: #565553;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+  color: #a2a19e;
+  padding-top: 60px;
+}
+
+.footer .second:first-of-type {
+  margin: 0;
+}
+
+.footer .second:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-height: 700px) {
+  .footer .second {
+    padding-top: 16px;
+  }
+}
+
+.footer .second a {
+  color: #7b7976;
+  padding: 0 14px 0 12px;
+  text-align: center;
+  color: #7b7976;
+  border-right: 1px solid #e2e0dc;
+}
+
+.footer .second a.selected {
+  color: #60caad;
+}
+
+.footer .second a.selected {
+  color: #60caad;
+}
+
+.footer .second a:first-of-type {
+  padding-left: 0;
+}
+
+.footer .second a:last-of-type {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.footer .second .localization {
+  margin-top: 10px;
+}
+
+.footer .second .third-party-presence {
+  margin-top: 20px;
+}
+
+.footer .second .third-party-presence ul {
+  padding: 0;
+  list-style: none;
+  margin-right: -3px;
+}
+
+.footer .second .third-party-presence ul li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 38px;
+  height: 38px;
+  margin: 0 2px;
+}
+
+.footer .second .third-party-presence ul li a {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-size: 136px 102px;
+  -moz-background-size: 136px 102px;
+  background-size: 136px 102px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  text-indent: -9999em;
+  border: 2px solid #e2e0dc;
+  background-image: url("../assets/images/shared/icon_third_party@2x.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer .second .third-party-presence ul li a:hover {
+  border-color: #737270;
+  opacity: 1;
+}
+
+.footer .second .third-party-presence ul li a:active {
+  border-color: #737270;
+  background-color: #737270;
+}
+
+.footer .second .third-party-presence ul li.facebook a {
+  background-position: 0 0;
+}
+
+.footer .second .third-party-presence ul li.facebook a:hover {
+  background-position: 0 -34px;
+}
+
+.footer .second .third-party-presence ul li.facebook a:active {
+  background-position: 0 -68px;
+}
+
+.footer .second .third-party-presence ul li.twitter a {
+  background-position: -34px 0;
+}
+
+.footer .second .third-party-presence ul li.twitter a:hover {
+  background-position: -34px -34px;
+}
+
+.footer .second .third-party-presence ul li.twitter a:active {
+  background-position: -34px -68px;
+}
+
+.footer .second .third-party-presence ul li.linkedin a {
+  background-position: -68px 0;
+}
+
+.footer .second .third-party-presence ul li.linkedin a:hover {
+  background-position: -68px -34px;
+}
+
+.footer .second .third-party-presence ul li.linkedin a:active {
+  background-position: -68px -68px;
+}
+
+.footer .second .third-party-presence ul li.instagram a {
+  background-position: -102px 0;
+}
+
+.footer .second .third-party-presence ul li.instagram a:hover {
+  background-position: -102px -34px;
+}
+
+.footer .second .third-party-presence ul li.instagram a:active {
+  background-position: -102px -68px;
+}
+
+@media screen and (max-width: 960px) {
+  .footer .first .navigation {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    float: none;
+    width: auto;
+    max-width: none;
+    margin-top: 4%;
+  }
+  .footer .first .third-party-presence {
+    float: none;
+    margin-top: 4%;
+    border-top: 1px solid #e2e0dc;
+    border-bottom: 1px solid #e2e0dc;
+    padding: 4% 0;
+  }
+  .footer .first .third-party-presence ul {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+  }
+  .footer .first .third-party-presence ul li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    padding: 0 0 8%;
+  }
+  .footer .first .navigation {
+    display: block;
+    float: none;
+    width: auto;
+    max-width: none;
+    margin-top: 8%;
+  }
+  .footer .first .navigation a {
+    /* Important added to override temporary Japanese menu overrides */
+    display: block !important;
+    margin: 0 !important;
+    padding-left: 0;
+    padding: 4% 0;
+    text-align: center;
+  }
+  .footer .first .third-party-presence {
+    float: none;
+    margin-top: 8%;
+    border-top: 1px solid #e2e0dc;
+    border-bottom: 0;
+    padding-top: 4%;
+    padding-bottom: 0;
+  }
+  .footer .first .third-party-presence ul {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+  }
+  .footer .first .third-party-presence ul li {
+    display: block;
+  }
+  .footer .second {
+    margin: 4% auto 0;
+    border-top: 1px solid #e2e0dc;
+    padding: 4% 10% 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */
