@@ -26,7 +26,7 @@ SECRET_KEY = '4$5ekytxb=!!tgyeyob%26$gy%d6b*-sm%ws*g(w9-+g4h$kjf'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'pymitch.pythonanywhere.com/',
+    'pymitch.pythonanywhere.com',
     'classicyoudesigns.com',
     'localhost'
 ]
