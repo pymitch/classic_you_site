@@ -12,3 +12,9 @@ def blog(request):
 
 def book(request):
     return render(request, 'book.html')
+
+def ideas(request):
+    return render(request, 'ideas.html')
+
+def contact(request):
+    return render(request, 'contact.html')

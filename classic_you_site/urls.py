@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^about/', views.about, name='about'),
     url(r'^blog/', views.blog, name='blog'),
     url(r'^book/', views.book, name='book'),
+    url(r'^ideas/', views.ideas, name='ideas'),
+    url(r'^contact/', views.contact, name='contact'),
 ]

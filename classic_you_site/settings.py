@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'http://pymitch.pythonanywhere.com/',
-    'http://classicyoudesigns.com'
+    'http://classicyoudesigns.com',
+    'localhost'
 ]
 
 
